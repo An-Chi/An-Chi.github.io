@@ -132,6 +132,7 @@
 
 .advantage:nth-of-type(odd) .feature{
 	left: -5%;
+
 }
 
 .advantage:nth-of-type(odd):hover .feature{
@@ -149,34 +150,42 @@
 
 
 
+
 .feature h2 {
 	font-size: 50px;
 	text-align: center;
 	line-height:100px;
 	margin: auto;
+	background-color: #BB0404;
+	order: 1;
 }
+
+
 
 
 .feature h2:nth-of-type(1) {
 	font-size: 120px;
 	writing-mode: vertical-lr;
-	background-color: #BB0404;
 	flex-grow: 1;
+
 }
 
 .feature h2:nth-of-type(2) {
 	flex-grow: 3;
-	background-color: #BB0404;
 
+}
+
+.advantage:nth-of-type(even) .feature h2:nth-of-type(1) {
+	order: 2;
 }
 
 
 .feature div {
 	line-height: 1.6;
 	padding: 20px;
-	background-color: #000;
 	font-size: 18px;
-
+	background-color: #000;
+	order: 3;
 }
 
 .feature h3 {
