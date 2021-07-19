@@ -22,7 +22,7 @@ html, * {
 opacity: 0.1;*/
 }
 
-.navbar, .programs-wrapper, .about-us-wrapper, .phy-wrapper, .food-package-wrapper, .step-eating-wrapper  {
+.navbar, .programs-wrapper, .about-us-wrapper, .phy-wrapper, .food-package-wrapper, .step-eating-wrapper, .feature-wrapper, .clients-photo-wrapper  {
 	max-width: 1158px;
 	margin: 0 auto;
 	display: flex;
