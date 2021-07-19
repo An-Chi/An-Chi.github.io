@@ -256,10 +256,10 @@ offset-x | offset-y | blur-radius | spread-radius | color */
 
 	}
 
-	.swipe-circle {
-		position: absolute;
-		top: -10%;
-		left: 46%;
+.swipe-circle {
+	position: absolute;
+	top: -10%;
+	left: 46%;
 	/*	bottom: 0%;
 	right: 0;*/
 	width: 100%;
@@ -338,7 +338,7 @@ offset-x | offset-y | blur-radius | spread-radius | color */
 	background-color: #FFEE58;
 
 }
-
+/*要重新命名*/
 .sg-1 h2::before {
 	content: "250";	
 }
@@ -481,6 +481,7 @@ section.about-us {
 	width: 120px;
 	height: 60px;
 	border: 3px solid #D6D6D6;
+	background-color: #fff;
 	display: flex;
 	flex-direction: column;
 	justify-content:center ;
@@ -619,7 +620,7 @@ section.food-package {
 .food-menu, .sticker-step-container {
 	display: flex;
 	padding-top: 70px;
-	border: 1px solid yellow;
+	/*border: 1px solid yellow;*/
 	order:2
 }
 
@@ -649,7 +650,7 @@ section.food-package {
 	display: block;
 	content: "PER DAY";
 	margin: 0 auto;
-	border: 1px solid yellow;
+	/*border: 1px solid yellow;*/
 
 }
 
@@ -728,8 +729,8 @@ footer.plate-healthy-food {
 
 
 .flip img {
-  -webkit-transform: scaleY(-1);
-  transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
 }
 
 
