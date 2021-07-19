@@ -1,0 +1,46 @@
+.group {
+	width: 960px;
+	border:  1px solid red;
+	margin: auto;
+}		
+
+
+.item .item-title {
+	width: 320px;
+}
+
+.item .item-title h2 {
+	background-color: #f00;
+	font-size: 50px;
+}
+
+
+.item .item-title .txt {
+	background-color: #000;
+	padding: 20px;
+}
+
+
+.item .mv {
+	width: 640px;
+}
+
+
+.item .mv .cover {
+	width: 100%;
+}
+
+.item .mv .cover img {
+	width: 100%;
+}
+
+.
+
+.item .mv .btn-play {
+	width: 80px; 
+	display: block;
+}
+
+.item.mv .btn-play img {
+	
+}
