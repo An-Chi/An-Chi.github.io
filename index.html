@@ -3,215 +3,352 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Position-AnChi</title>
+	<title>Home | PLATE HEALTHY FOOD</title>
+	<link rel="icon" type="image/x-icon" href="./images/[livedemo00.template-help.com][823]favicon.ico">
 	<link rel="stylesheet" href="./css/reset.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="./css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/style.css">
-
+	<script type="text/javascript" src="./js/scripts.js"></script>
 </head>
 <body>
-	<!-- http://fakeimg.pl/440x300/282828/EAE0D0/?text=PJCHENder -->
-
-	<!-- odd -1 -->
+	
 	<div class="container">
-		<div class="advantage">
-			<div class="car-img">
-				<a href="#">	
-					<img src="http://fakeimg.pl/350x200/00CED1/FFF/?text=car-img-1">
-					<div class="youtube-logo">
-						<img src="./images/yt_icon_rgb.png" alt="Youtube button">
-						<div class="triangle"></div>
+		<!-- header - navigation -->
+		<header class="header">
+			<nav class="navbar" id="navigation">
+
+				<!-- toggle button -->
+				<button type="button" id="nav-hamburger" class="navbar-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<h1 class="logo">
+					<a href="#">
+						<img src="./images/[livedemo00.template-help.com][454]logo-inverse-269x100.png" alt="PLATE HEALTHY FOOD LOGO">
+					</a>
+				</h1>
+
+
+				<ul class="nav-link">
+					<li><a href="">Programs</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Clients</a></li>
+				</ul>
+
+				<button type="button" id="nav-order" class="orderlist-aside-toggle">
+					<span class="icon-pencil"><i class="fa fa-pencil"></i></span>
+					
+				</button>
+
+				<!-- aside - 側邊攔  -->
+				<aside class="order-list">
+					<h2>COMPLETE YOUR ORDER</h2>
+					
+					<form action="" id="orderList">
+						<div class="form-group">
+							<select name="" id="foodPackage">
+								<option value="Detox">Detox</option>
+								<option value="Balanced">Balanced</option>
+								<option value="Vegan">Vegan</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+
+							<!-- 先用 required -->
+							<input type="tel" name="phone" id="phone" placeholder="Phone" required>
+						</div>
+						<div class="form-group">
+							<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+						</div>
+						<div class="form-group">
+							<buttom class="submit">ORDER NOW</buttom>
+
+						</div>
+					</form>
+				</aside>
+
+			</nav>
+		</header>
+
+		<!-- 1. Programs - Swipe title, photo -->
+		<section class="programs">
+			<!-- circle - animation, product picture -->
+			<div class="swipe-circle"></div>
+			<div class="programs-wrapper">
+				<div class="promo-wrapper">
+					<!-- 1. -->
+					<div class="swipe-group sg-0">
+						<h2>DELIVERY SERVICE</h2>
+						<h3>WELCOME TO PLATE</h3>
+						<P>Plate offers quick delivery of organic & healthy food all over the state</P>
+						<p>Why Choose Plate</p>
 					</div>
-				</a>
-			</div>
-			<div class="background-grid">
-			</div>
-			<div class="feature">
-				<h2>01</h2>
-				<h2>操控樂趣</h2>
-				<div>
-					<h3>人人滿意的駕駛體驗</h3>
-					<p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。</p>
-				</div>
-			</div>
-			<div class="innovation">
-				<div class="innovation-title">
-					因為我們做了這些革新
-				</div>
-				<div class="highlight">
-					<h4>低重心設計</h4>
-					<p>透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側領，保持高速行駛穩定性。</p>
 
-					<h4>車體剛性強化</h4>
-					<p>車身結構採用超高強度鋼材，提高車輛穩定性，同時藉由雷射強化焊接技術，大幅增加焊點數量，提升車身抗扭剛性，強化駕馭穩定性及安全性。</p>
-					<h4>四輪獨立懸吊</h4>
-					<p>搭載全新四輪獨立懸吊設定，透過懸吊的高乘載強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清溪路感回饋，提升駕馭樂趣。</p>
-
-				</div>
-			</div>
-		</div>
-
-		<!-- even - 2 -->
-		<div class="opppsite advantage">
-			<div class="car-img">
-				<a href="#">	
-					<img src="http://fakeimg.pl/350x200/00CED1/FFF/?text=car-img-2">
-					<div class="youtube-logo">
-						<img src="./images/yt_icon_rgb.png" alt="Youtube button">
-						<div class="triangle"></div>
+					<!-- 2. -->
+					<div class="swipe-group sg-1">
+						<h2>SUPPORTED LOCATIONS</h2>
+						<h3>DELIVERY THROUGHOUT THE COUNTRY</h3>
+						<P>Our food delivery service is available in more than 200 cities for your comfort.</P>
+						<p>Nationwide Delivery</p>
 					</div>
-				</a>
-			</div>
-			<div class="background-grid">
-			</div>
-			<div class="feature">
-				<h2>02</h2>
-				<h2>安全守護</h2>
-				<div>
-					<h3>行車更安心的高剛性車體</h3>
-					<p>你的愛車會妥善保護您，強悍穩固的車身可使您安全無虞。 世界級的安全功能讓您輕鬆自如享受旅程、毫無後顧之憂。</p>
-				</div>
-			</div>
-			<div class="innovation">
-				<div class="innovation-title">
-					因為我們做了這些革新
-				</div>
-				<div class="highlight">
-					<h4>主動安全</h4>
-					<p>以先進的TSS系統，主動偵測路況，輔助駕駛判斷路況並維持行車安全。</p>
 
-					<h4>被動安全</h4>
-					<p>堅固的高剛性車體，使用熱沖壓材料的高度抗扭鋼板，強化座艙對意外事故的保護力。</p>
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-
-
-
-
-		<!-- odd - 3 -->
-		<div class="advantage">
-			<div class="car-img">
-				<a href="#">	
-					<img src="http://fakeimg.pl/350x200/00CED1/FFF/?text=car-img-3">
-					<div class="youtube-logo">
-						<img src="./images/yt_icon_rgb.png" alt="Youtube button">
-						<div class="triangle"></div>
+					<!-- 3. -->
+					<div class="swipe-group sg-2">
+						<h2>DELICIOUS FOOD</h2>
+						<h3>BEST DISHES & INGREDIENTS</h3>
+						<P>Plate regularly updates the menus to make sure our customers eat the best and the tastiest food.</P>
+						<p>Organic Ingredients</p>
 					</div>
-				</a>
-			</div>
-			<div class="background-grid">
-			</div>
-			<div class="feature">
-				<h2>03</h2>
-				<h2>乘坐舒適</h2>
-				<div>
-					<h3>令人放鬆舒適的車室空間</h3>
-					<p>車室空間設計著重人體工學，透過方向盤、踏板等位置優化，追求更舒適的駕駛位置，並以新型座椅設計，提高座椅包覆性，致力實現長途駕駛不疲勞的舒適駕馭體驗</p>
-				</div>
-			</div>
-			<div class="innovation">
-				<div class="innovation-title">
-					因為我們做了這些革新
-				</div>
-				<div class="highlight">
-					<h4>駕駛位置最佳化</h4>
-					<p>針對駕駛位置進行徹底的修改，讓駕馭者可如同握手般自然且舒適地操控方向盤</p>
 
-					<h4>駕馭視野佳</h4>
-					<p>考量駕駛坐進車內的高度，透過前擋風玻璃位置的調整，達到盲區極小化，使駕駛視野更開闊，同步提升駕駛安全。</p>
-					<h4>更寧靜的車室</h4>
-					<p>採用最新三層結構的隔音材料，與引擎、變速箱的零件改革，將座艙的鎮對抑制在最小限度，提供乘客安靜舒適的感受</p>
+					<!-- 4. -->
+					<div class="swipe-group sg-3">
+						<h2>POSITIVE REVIEWS</h2>
+						<h3>OUR CLIENTS TRUST US</h3>
+						<P>Our clients' reviews are the best way to learn more about our food delivery service.</P>
+						<p>Reviews & Testimonials</p>
 
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-		<!-- even - 4 -->
-		<div class="opppsite advantage">
-			<div class="car-img">
-				<a href="#">	
-					<img src="http://fakeimg.pl/350x200/00CED1/FFF/?text=car-img-4">
-					<div class="youtube-logo">
-						<img src="./images/yt_icon_rgb.png" alt="Youtube button">
-						<div class="triangle"></div>
 					</div>
-				</a>
-			</div>
-			<div class="background-grid">
-			</div>
-			<div class="feature">
-				<h2>04</h2>
-				<h2>以人為本</h2>
-				<div>
-					<h3>使用者導向的貼心設計</h3>
-					<p>藉由高度人性化的介面整合，傳遞車輛資訊，豐富日常駕駛體驗。</p>
-				</div>
-			</div>
-			<div class="innovation">
-				<div class="innovation-title">
-					因為我們做了這些革新
-				</div>
-				<div class="highlight">
-					<h4>優異油耗表現</h4>
-					<p>以AURIS為例，更強勁的高效引擎將熱效率提升至40%，達到世界級水準，屢屢突破燃油效率新境界。</p>
 
-					<h4>行李箱空間最適化</h4>
-					<p>以PRIUS為例，透過將電池位置移到後座下方，讓行李箱擁有更大的空間。</p>
-
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-
-		<!-- odd - 5 -->
-		<div class="advantage">
-			<div class="car-img">
-				<a href="#">	
-					<img src="http://fakeimg.pl/350x200/000000/FFF/?text=car-img-5">
-					<div class="youtube-logo">
-						<img src="./images/yt_icon_rgb.png" alt="Youtube button">
-						<div class="triangle"></div>
+					<div class="swipe-page">
+						<span class="page-num">01</span>
+						<span class="page-num">02</span>
+						<span class="page-num">03</span>
+						<span class="page-num">04</span>
 					</div>
-				</a>
-			</div>
-			<div class="background-grid">
-			</div>
-			<div class="feature">
-				<h2>05</h2>
-				<h2>引以為傲</h2>
-				<div>
-					<h3>極具吸引力的精心設計</h3>
-					<p>TNGA 車款擁有人忍不住回頭的新潮外觀，讓駕駛充滿自信的駕馭快感! 不僅讓車主能展現個人風格，也能讓擁有者都引以為傲。</p>
-				</div>
-			</div>
-			<div class="innovation">
-				<div class="innovation-title">
-					因為我們做了這些革新
-				</div>
-				<div class="highlight">
-					<h4>設計概念</h4>
-					<p>TNGA低重心設計，不僅呈現更低伏的運動化外觀，更講究高品質內裝的一致性。</p>
 
-					<h4>環保概念</h4>
-					<p>為了對環境保護盡一份心力，我們全面提升傳統引擎、變速箱與油電複合動力的動力效能。</p>
+				</div>
+
+				<div class="pdt-pic-wrapper">
+					<div class="pdt-pic">
+						<img src="./images/[livedemo00.template-help.com][236]slider-02-671x671.png" alt="ingredients - avocado picture">
+					</div>
+
 				</div>
 			</div>
+		</section>
+
+		<!-- 2. About Us -->
+		<section class="about-us">
+			<div class="about-us-wrapper">
+				<div class="chef-img">
+					<img src="./images/[livedemo00.template-help.com][982]home-01-455x685.png" alt="photo of Head Chef - Julie Fox">
+				</div>
+
+				<div class="about-us-desc">
+					<div class="plate-history">
+						<h2>HEALTHY FOOD CAN BE DELICIOUS</h2>
+						<h3>ABOUT US</h3>
+						<P>Choose gluten-free meals from our menu</P>
+						<p>The freshest ingredients for every dish</p>
+						<p>Get great discounts when ordering for 2+ people</p>
+					</div>
+					<a href="#" class="link-btn">READ MORE</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- 3. Food Packages -->
+		<section class="food-package">
+			
+			<div class="food-package-wrapper">
+				<h2>FOOD PACKAGE</h2>
+				<h3>WHAT WE OFFER</h3>
+				<div class="food-menu">
+					<div class="menu-item">
+						<h3>DETOX</h3>
+						<p>
+							<span>$</span>
+							<span>15<span>
+						</p>
+						<span>PER DAY</span>
+						<p>The best choice if you are looking for tasty & light yet healthy food to start your day full of energy.</p>
+						<a href="#" class="link-btn">ORDER NOW</a>
+						<a href="#">OPEN MENU (PDF)</a>
+						<div class="pdt-img">
+							<img src="./images/[livedemo00.template-help.com][704]product-01-176x176.png" alt="DETOX">
+						</div>
+					</div>
+
+					<div class="menu-item">
+						<h3>BALANCED</h3>
+						<p>
+							<span>$</span>
+							<span>30<span>
+							</p>
+							<span>PER DAY</span>
+							<p>If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!</p>
+							<a href="#" class="link-btn">ORDER NOW</a>
+							<a href="#">OPEN MENU (PDF)</a>
+							<div class="pdt-img">
+								<img src="./images/[livedemo00.template-help.com][334]product-02-176x176.png" alt="BALANCED">
+							</div>
+					</div>
+					<div class="menu-item">
+						<h3>VEGAN</h3>
+						<p>
+							<span>$</span>
+							<span>22<span>
+							</p>
+							<span>PER DAY</span>
+							<p>If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!</p>
+							<a href="#" class="link-btn">ORDER NOW</a>
+							<a href="#">OPEN MENU (PDF)</a>
+							<div class="pdt-img">
+								<img src="./images/[livedemo00.template-help.com][527]product-03-176x176.png" alt="VEGAN">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- 4. How It Works | 3 STEPS TO HEALTHY EATING-->
+			<section class="step-eating">
+
+				<div class="step-eating-wrapper">
+					<h2>3 STEPS TO HEALTHY EATING</h2>
+					<h3>HOW IT WORKS</h3>
+					<div class="sticker-step-container">
+						<div class="step">
+							<header>CHOOSE A FOOD PACKAGE</header>
+							<p>First, select the package that you prefer the most.</p>
+						</div>
+						<div class="arrow"><img src="./images/arrow-110x14.png" alt="step-forward"></div>
+						<div class="step">
+							<header>CUSTOMIZE YOUR MENU</header>
+							<p>After that, feel free to change and customize your menu.</p>
+						</div>
+						<div class="arrow"><img src="./images/arrow-110x14.png" alt="step-forward"></div>
+						<div class="step">
+							<header>SELECT A DELIVERY ADDRESS & TIME</header>
+							<p>Finally, let us know where and when to deliver your food.</p>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- 5. Features -->
+			<section class="features">
+				<div class="feature-desc">
+					<div class="desc">
+						<h3><i class="fa fa-diamond"></i>QUALITY</h3>			
+						<p>We work with the best suppliers to make sure you get the top-quality dishes, beverages, and service.</p>
+					</div>
+					<div class="desc">
+						<h3><i class="fa fa-diamond"></i>ORGANIC</h3>
+						<p>All ingredients we use are 100% organic and fresh. Such approach makes our food a lot healthier.</p>
+					</div>
+					<div class="desc">
+						<h3><i class="fa fa-leaf"></i>TASTY</h3>			
+						<p>Great and unforgettable taste of our dishes is what attracts more and more clients to Plate.</p>
+					</div>
+
+					<div class="desc">
+						<h3><i class="fa fa-diamond"></i>DIVERSE</h3>		
+						<p>Our team regularly updates the menus to provide you with better food diversity whenever you order.</p>
+					</div>				
+				</div>
+
+				<div class="bento-pic">
+					<div class="bento-img">
+						<img src="./images/[livedemo00.template-help.com][263]home-01-382x375.png" alt="meal-bento">
+					</div>
+					<div class="bento-img">
+						<img src="./images/[livedemo00.template-help.com][577]home-02-293x293.png" alt="meal-bento">
+					</div>
+					<div class="bento-img">
+						<img src="./images/[livedemo00.template-help.com][569]home-03-461x407.png" alt="meal-bento">
+					</div>
+					<div class="bento-img">
+						<img src="./images/[livedemo00.template-help.com][261]home-04-191x191.png" alt="meal-bento">
+					</div>
+				</div>
+			</section>
+
+			<!-- 6. What Our Clients Say -->
+			<section class="client-feedback">
+				<div class="clients-photo-wrapper">
+					<div class="client-photo">
+						<img src="./images/[livedemo00.template-help.com][307]testimonials-01-179x179.png" alt="client photo - SOPHIE SMITH">
+					</div>
+					<div class="client-photo">
+						<img src="./images/[livedemo00.template-help.com][439]testimonials-02-306x306.png" alt="client photo - ANN PETERS">
+					</div>
+					<div class="client-photo">
+						<img src="./images/[livedemo00.template-help.com][602]testimonials-03-179x179.png" alt="client photo - PETER LEE">
+					</div>	
+				</div>
+
+				<div class="client-say">
+					<h2>TESTIMONIALS</h2>
+					<h3>WHAT OUR CLIENTS SAY</h3>
+					<div class="client-review">
+						<div class="quote">
+							<img src="./images/[livedemo00.template-help.com][90]quote-37x29.png" alt="quote image">
+						</div>
+						<!-- 1 -->
+						<p class="client-msg">I have tried a lot of food delivery services but Plate is something out of this world! Their food is really healthy and it tastes great, which is why I recommend this company to all my friends!</p>
+						<p class="client-name">SOPHIE SMITH</p>
+						<!-- 2 -->
+						<p class="client-msg">Both the food and your customer service are excellent in every way, and I just wanted to express how happy I am with your company. Wishing you all the best!</p>
+						<p class="client-name">ANN PETERS</p>
+						<!-- 3 -->
+						<p class="client-msg">Thank you so much for your Balanced menu, it has been such a big help to me and I feel the food I am eating from you has really helped boost my immune system.</p>
+						<p class="client-name">PETER LEE</p>
+
+
+					</div>
+					<a href="#">SEND YOUR REVIEW</a>
+				</div>
+			</section>
+
+
+			<!-- Footer -->
+			<footer class="plate-healthy-food">
+				<div class="phy-wrapper">
+					<div class="plate-healthy-food-logo">
+						<h2 class="phy-logo">
+							<a href="#"><img src="./images/[livedemo00.template-help.com][853]logo-default-269x100.png" alt="PLATE HEALTHY FOOD"></a>
+						</h2>
+						<p>© 2021 Plate. All Rights Reserved.</p>
+					</div>
+					<div class="sitemap-list contact">
+						<h4>CONTACTS</h4>
+						<ul>
+							<li><span>Ph.</span><a href="">1-800-123-1234</a></li>
+							<li><span>Mail.</span><a href="">Info@demolink.org</a></li>
+							<li><a href="">8439 Pierce Court Sacramento, CA 95820</a></li>
+						</ul>
+					</div>
+
+					<div class="sitemap-list quick-links">
+						<h4>QUICK LINKS</h4>
+						<ul>
+							<li><a href="">How It Works</a></li>
+							<li><a href="">About</a></li>
+							<li><a href="">Why Choose Us</a></li>
+						</ul>
+					</div>
+					<div class="sitemap-list food-package">
+						<h4>FOOD PACKAGES</h4>
+						<ul>
+							<li><a href="">Detox</a></li>
+							<li><a href="">Balanced</a></li>
+							<li><a href="">Vegan</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
 		</div>
-
-	</div>	
-
-</body>
+		<!-- END of .container -->
+	</body>
 </html>

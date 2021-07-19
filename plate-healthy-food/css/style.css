@@ -1,0 +1,596 @@
+html, * {
+
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+
+}
+
+/* */
+.container {
+	position: relative;  /*為了 circle 跟 orderlist*/
+	overflow: hidden;
+
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	/*z-index: 1000;*/
+	background-color: #71B85F;
+
+	/*opacity: 0.6;*/
+}
+
+.navbar, .programs-wrapper, .about-us-wrapper, .phy-wrapper  {
+	max-width: 1158px;
+	margin: 0 auto;
+	display: flex;
+	/*border: 1px solid #dda;*/
+
+}
+
+.navbar {
+	padding: 20px 20px;
+}
+
+.logo {
+	/*border: 1px solid #FDEC57;*/
+
+}
+
+.nav-link {
+	/*border: 1px solid #FDEC57;*/
+	display: flex;
+	align-items: center;
+	margin-left: 50px;
+	font-weight: bold;
+
+}
+
+.nav-link li {
+	position: relative;
+	margin: 0 20px;
+	/*border:  1px solid blue;*/
+}
+
+.nav-link a {
+	display: flex;
+	color: #fff;
+
+	padding: 10px 0px;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: flex-end;
+	/*background-color: #fff;*/
+
+}
+
+.nav-link a:hover {
+	/*background-color: #ba0;*/
+
+}
+
+
+.nav-link a:actived {
+	color: #fff;
+}
+
+
+
+
+
+.nav-link li:nth-of-type(1) a:hover {
+	background-color: #aaf;
+
+}
+
+.nav-link li a::after {
+	position: absolute; /* 不要影響 a 本身的高度 */
+	bottom: 0px;
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+
+}
+
+
+/* box-shadow
+offset-x | offset-y | blur-radius | spread-radius | color */
+.orderlist-aside-toggle {
+	position: absolute;
+	right: 30px;
+	top: 45px;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 0px solid #fff;
+	/*box-shadow: 0px 5px 8px #E9E9E9;*/
+	box-shadow: 0px 10px 8px #E9E9E9;
+	/*background-color: pink;*/
+	transition: box-shadow 1s;
+	cursor: pointer;
+	/*z-index: 1000;*/
+
+}
+
+
+.orderlist-aside-toggle:hover {
+	box-shadow: 0px 5px 8px #E9E9E9;
+
+}
+
+
+
+
+.icon-pencil {
+	font-size: 36px;
+}
+
+.navbar-toggle {
+	border: 1px solid #ddd;
+	cursor:  pointer;
+}
+
+
+.icon-bar {
+	/* 
+		span 是inline element，
+		將其設定為 block 讓 span 可以換行 不水平排列 
+		block 的特性就是可以設定高跟寬
+		*/
+		/*display: inline;*/
+		display: block;
+		width: 22px;
+		height: 4px;
+		margin: 5px;
+		border-radius: 1px;
+		background-color: #888;
+	}
+
+
+	@media (min-width:  760px){
+		.navbar-toggle {
+			display: none;
+		}
+	}
+
+
+
+
+	.logo img {
+		width: 134px;
+		height: 50px;
+	}
+
+
+	aside.order-list, aside.order-list form {
+		display: none;
+	}
+
+
+	aside.order-list {
+		font-size: 24px;
+
+		position: fixed;
+		right: 0px;
+		top: 0;
+		bottom: 0;
+		width: 460px;
+		padding: 70px 70px;
+		background-color: #aaf
+		/* height 會影響高度 但先用這個，之後再刪掉 */
+		/*height: auto;*/
+
+	}
+
+	aside.order-list h2 {
+		font-weight: bold;
+		text-align: center;
+
+
+	}
+
+
+
+	/* Form */
+	#orderList {
+		background-color: #faf;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-items: center;
+
+
+	}
+
+
+	.form-group {
+		margin: 0 auto;
+		width: 100%
+	}
+
+	.form-group select, .form-group input, .form-group textarea {
+		width: 100%;
+	}
+
+
+	.submit {
+
+		background-color: #71B85F;
+		padding: 20px 40px;
+
+	}
+
+	/*  bgc : test */
+	section {
+		padding-top: 90px;
+		background-color: #71B85F;
+
+	}
+
+	section:nth-of-type(even) {
+		padding-top: 90px;
+		background-color: #fff;
+
+	}
+
+
+
+	/* 1. section programs */
+	section.programs {
+		color: #fff;
+		/*margin-top: 91px;*/
+		/*padding-top: 120px;*/
+		background-color: #71B85F;
+		width: 100%;
+		/*border: 1px solid red;*/
+
+		display: flex;
+		/*justify-content: flex-end;*/
+		z-index: 1000;
+
+	}
+
+	.swipe-circle {
+		position: absolute;
+		top: -10%;
+		left: 48%;
+		bottom: 0%;
+		right: 0;
+		width: 100%;
+		height: 50%;
+		border-radius: 50%;
+		/*background-color: #afd;*/
+		background-color: #fff;
+		/*display: none;*/
+		z-index: 1;
+
+	}
+
+	
+
+	.programs-wrapper {
+		padding: 100px 20px 0 20px;
+		/*border: 1px solid red;*/
+		position: relative;
+		display: flex;
+		/*justify-items: flex-start;*/
+		align-items: flex-start;
+
+
+	}
+
+	.promo-wrapper {
+		width: 40%;
+		height: auto;
+		/*border: 1px solid yellow;*/
+
+
+	}
+
+
+	.swipe-group {
+		display: flex;
+		flex-direction: column;
+		font-weight: bold;
+		position: relative;
+		/*border: 1px solid yellow;*/
+	}
+
+
+
+	.swipe-group:nth-of-type(3), .swipe-group:nth-of-type(even) {
+		display: none;
+	}
+
+	.swipe-group h2, .swipe-group p {
+		padding-top: 30px;
+
+	}
+
+	.swipe-group h2 {
+		font-size: 80px;
+		order: 2;
+	}
+
+	/*.sg-0 ~ .sg-3*/
+	.swipe-group h2::before {
+		content: "#1";
+		color: #000;
+		text-align: center;
+		position: absolute;
+		line-height: 2.5;
+		top: 35px ;
+		left: -25px ;
+		display: block;
+		font-size: 20px;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		/*border: 1px solid yellow;*/
+		background-color: #FFEE58;
+
+	}
+
+	.sg-1 h2::before {
+		content: "250";	
+	}
+
+
+	.sg-2 h2::before {
+		content: "100%";	
+	}
+
+	.sg-3 h2::before {
+		content: "3K";	
+	}
+
+
+
+
+
+	.swipe-group h3 {
+		padding-top: 10px;
+		font-size: 20px;
+		order: 1;
+	}
+
+	.swipe-group p {
+		font-size: 18px;
+		line-height: 1.6;
+		order: 3;
+	}
+
+	.swipe-group p:nth-of-type(2) {
+		padding-top: 100px;
+		/*color: #E9E9E9;*/
+		opacity: 0.5;
+		
+	}
+
+
+	.swipe-page {
+
+		position: absolute;
+		/*top: 500px;*/
+		bottom: 300px;
+		display: flex;
+		/*flex-wrap: wrap;*/
+		/*background-color: #000;*/
+		border-bottom: 1px solid #BDDCAF;
+
+
+	}
+
+	span.page-num {
+		/*display: inline-block;*/
+		font-size: 24px;
+		margin: 0 auto;
+		/*padding-bottom: 20px;*/
+		padding: 10px 20px;
+		/*margin: 0 10px;*/
+		cursor: pointer;
+		/*border-bottom: 1px solid yellow;*/
+		opacity: 0.5;
+
+		transition: border-bottom 1s, font-size 0.5s, opacity 1s;
+
+	}
+
+	span.page-num:hover {
+		border-bottom: 4px solid #BDDCAF;
+		font-size: 30px;
+		opacity: 1;
+	}
+
+
+
+/*.page-num::after {
+	display: inline-block;
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+
+
+}
+*/
+
+
+
+.pdt-pic-wrapper {
+	width: 58%;	
+	z-index: 1000;
+	box-shadow: 00px 0px 50px 30px #E9E9E9;
+	border-radius: 50%;
+	/*border: 1px solid blue;*/
+	position: relative;
+	left: 280px;
+	bottom: 110px;
+
+}
+
+.pdt-pic {
+	
+}
+
+.pdt-pic img {
+	width: 100%
+}
+
+
+
+
+
+
+
+
+section.about-us {
+	background-color: #F9F9F9;
+	z-index: 1000;
+	position: relative;
+}
+
+
+
+
+section.about-us {
+	z-index: 1000;
+	position: relative;
+	border: 1px solid red;
+
+}
+
+.about-us-wrapper {
+	border: 1px solid blue;
+
+}
+
+
+
+.chef-img {
+	padding: 0 10px;
+}
+
+
+.chef-img:after {
+	content: "Julie Fox";
+	width: 40px;
+	height: 20px;
+}
+
+
+
+
+.plate-history {
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+	position: relative;
+	/*border: 1px solid yellow;*/
+}
+
+
+section.food-package {
+	z-index: 1000;
+	position: relative;
+}
+
+
+
+section.step-eating {
+
+}
+
+
+section.features {
+
+}
+
+
+
+section.client-feedback {
+
+}
+
+footer.plate-healthy-food {
+	border-top: 1px solid #DBDBDB;
+	background-color: #F9F9F9;
+
+
+}
+
+footer .phy-wrapper {
+	display: flex;
+	/*border: 1px solid red;*/
+	justify-content: space-between;
+	padding: 80px 0px 200px 0px;
+}
+
+footer .phy-wrapper a {
+	color: #000;
+	text-decoration: none;
+}
+
+footer .phy-wrapper a:actived {
+	color: #000;
+	text-decoration: none;
+}
+
+
+footer .phy-wrapper a:focus {
+	color: #000;
+	text-decoration: none;
+}
+
+
+
+.plate-healthy-food-logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+}
+
+
+.plate-healthy-food-logo p {
+	padding: 50px 0;
+}
+
+
+
+.phy-logo {
+	/*border: 1px solid red;*/
+
+}
+
+.phy-logo img {
+	width: 134px;
+	height: 50px;
+}
+
+
+.sitemap-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 0 30px;
+}
+.sitemap-list ul li {
+	color: #7F7F7F;
+	padding: 10px 0;
+}
+
+.sitemap-list ul li span {
+	padding-right:10px;
+	font-weight: bold;
+}
+
+.sitemap-list h4 {
+	font-weight: bold;
+}
