@@ -52,11 +52,11 @@ article.description {
 	}	
 
 	.pic {
-		width: 47.916666%; /* 1200-(10*2)-(10*2)-(5*2) */
+		width: 47.833333%; /* 1200-(10*2)-(10*2)-(5*2)-(1*2) */
 	}
 
 	.description {
-		width: 47.916666%;
+		width: 47.833333%;
 	}
 
 	.item:nth-of-type(even) .pic {
