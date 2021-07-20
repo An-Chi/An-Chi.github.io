@@ -18,8 +18,9 @@
 
 
 .pic {
-	/*margin: 5px;*/
+	margin: 5px;
 }
+
 
 .pic img {
 	width: 100%;
@@ -52,17 +53,23 @@ article.description {
 	}	
 
 	.pic {
-		width: 47.416666%; /* 1200-(10*2)-(10*2)-(1*2)-(10*2) = 1138*/
-		margin-left: 10px;
-		margin-right: 10px;
+		width: 47.833333%; /* 1200-(10*2)-(10*2)-(5*2)-(1*2) */
 	}
 
 	.description {
-		width: 47.416666%;
+		width: 47.833333%;
 	}
 
-	.item:nth-of-type(even) .pic {
+/*	.item:nth-of-type(even) .pic {
 		order: 1;
+	}*/
+
+
+	.item:nth-of-type(even) {
+		flex-direction: row-reverse;
+		/*flex-flow*/
 	}
 
+	/* float  */
+  
 }
