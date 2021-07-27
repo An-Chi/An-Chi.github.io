@@ -11,10 +11,10 @@ html {
 
 /* 負責制定最大寬度，基本上不適合作為flex操作用 */
 .container {
-	--grid-gap: 10px;
+	--grid-gap: 15px;
 	/*max-width: 1440px;*/
 	margin: auto;
-/*	padding-left: var(--grid-gap);
+	/*padding-left: var(--grid-gap);
 	padding-right: var(--grid-gap);*/
 }
 
@@ -23,12 +23,13 @@ html {
 .row {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	padding-left: calc(var(--grid-gap) * -1);
 	padding-right: calc(var(--grid-gap) * -1);
 }
 
 
-[class*=".col-"], [class*="cols"] > *  {
+[class*="col-"], [class*="cols"] > *  {
 	/* --variableName 是可自訂的名稱，custom property IE不支援 */
 	/*--grid-gap: 15px;*/
 	/*--ooxx: 15px; */

@@ -4,40 +4,43 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- 要加meta -->
-	<title>五倍紅寶石·專業程式教育機構</title>
+	<title>NO五倍紅寶石·專業程式教育機構</title>
 	<!-- icon -->
 	<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/reset.css">
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="./css/all.css">
-	<link rel="stylesheet" href="./css/style.css">
-	<!-- <link rel="stylesheet" href="./css/style-grid.css"> -->
+	<!-- <link rel="stylesheet" href="./css/style.css"> -->
+	<link rel="stylesheet" href="./css/style-grid.css">
 	<link rel="stylesheet" href="./css/grid-ref.css">
 </head>
 <body>
 	<!-- ## container - outer -->
 	<div class="container">
-		<nav class="header ">
+		<nav class="header">
 			
 			<h1 class="title">
-				<a href="#" class="link home">
+				<a class="home link" href="#">
 					<div class="logo">
 						<img src="./images/5xruby.svg" alt="五倍紅寶石·專業程式教育機構 logo">
 					</div>
 					<span>五倍紅寶石 · 專業程式教育機構</span>
 				</a>
 			</h1>
-			<div class="col menu">
+			<div class="menu">
 				<ul>
-					<li><a class="link" href="">全方位培訓營</a></li>
-					<li><a class="link" href="">ASTRO Camp</a></li>
-					<li><a class="link" href="">線上課程</a></li>
-					<li><a class="link" href="">短期課程</a></li>
-					<li><a class="link" href="">專欄文章</a></li>
-					<li><a class="link" href="">最新消息</a></li>
+					<li><a href=""><span>全方位培訓營</span></a></li>
+					<li><a href=""><span>ASTRO Camp</span></a></li>
+					<li><a href=""><span>線上課程</span></a></li>
+					<li><a href=""><span>短期課程</span></a></li>
+					<li><a href=""><span>專欄文章</span></a></li>
+					<li><a href=""><span>最新消息</span></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -63,15 +66,15 @@
 		<section class="curr-plan row row-cols-1">
 			<div class="curr-plan-wrap">
 				<div id="section-title">
-					<h2 class="curr-title">不只停留在教你釣魚，更引領你乘風破浪</h2>
+					<h2 class="curr-title"><span>不只停留在教你釣魚，更引領你乘風破浪</span></h2>
 					<p class="curr-statement">我們不藏私的教學，讓所有人都能發揮超越五倍的價值。</p>
 				</div>
 
 				<!-- curriculum feature 課程特色 縮寫 curr-feat-->
-				<div class="curr-featrow row row-cols-md-2 row-cols-lg-3">
-					<div class="curr-feat-card curr-learning">
-						<div class="curr-feat-img">
-							<img src="./images/learning.webp" alt="">
+				<div class="curr-feat row row-cols-1 row-cols-md-2 row-cols-lg-3">
+					<div class="curr-feat-card curr-learning col">
+						<div class="curr-feat-img row row-cols-md-1">
+							<img src="./images/learning.webp" alt="鍛鍊實力，主導學習示意圖">
 						</div>
 						<h3 class="card-title">鍛鍊實力，主導學習</h3>
 						<p>搭配最新技術版本，掌握業界脈動，</p>
@@ -79,8 +82,8 @@
 					</div>
 
 					<div class="curr-feat-card curr-plan">
-						<div class="curr-feat-img">
-							<img src="./images/plan.webp" alt="">
+						<div class="curr-feat-img row row-cols-md-1">
+							<img src="./images/plan.webp" alt="完整規劃，絕不漏接示意圖">
 						</div>
 						<h3 class="card-title">完整規劃，絕不漏接</h3>
 						<p>線上補課、線下討論與社群活動，</p>
@@ -88,8 +91,8 @@
 					</div>
 
 					<div class="curr-feat-card curr-challenge">
-						<div class="curr-feat-img">
-							<img src="./images/challenge.webp" alt="">
+						<div class="curr-feat-img row row-cols-md-1">
+							<img src="./images/challenge.webp" alt="挑戰困境，突破職涯示意圖">
 						</div>
 						<h3 class="card-title">挑戰困境，突破職涯</h3>
 						<p>無論新手跨領域轉職，或在職工程師深度進修，</p>
@@ -109,25 +112,30 @@
 
 		<!-- 講師陣容 -->
 		<section class="instructors">
+			<!-- wrap -->
 			<div class="instr-wrap">
-				<div clsss="section-title">
-					<h2 class="instr-title">講師陣容</h2>
-					<p>我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。
+				<!-- TODO class selector is not working -->
+				<div clsss="instr-header" id="instructors-header">
+					<h2 class="instr-title"><span>講師陣容</span></h2>
+					<p class="instr-desc">我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。
 					</p>
 				</div>
-				<div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+				<div class="instructors-content row row-cols-lg-2">
 					<!-- Amos Lee -->
-					<div class="instr-lists">
+					<div class="instr-lists col">
 						<div class="instr-info">
 							<div class="instr-contact-info">
-								<div class="instr-photo col-3"><img src="./images/Amos.webp" alt="instructor-Amos"></div>
-								<div class="instr-position"><p>HTML / CSS 講師</p>
+								<div class="instr-photo col-3">
+									<img src="./images/Amos.webp" alt="instructor-Amos">
+								</div>
+								<div class="instr-position col-8">
+									<p>HTML / CSS 講師</p>
 									<h3 class="instr-name">李建杭 (Amos Lee)</h3>
 									<!-- fontawesome icons -->
 									<ul class="cont-link">
-										<li><i class="fas fa-globe"></i></li>
-										<li><i class="fab fa-facebook"></i></li>
-										<li><i class="fab fa-youtube"></i></li>
+										<li><a href=""><i class="fas fa-globe"></a></i></li>
+										<li><a href=""><i class="fab fa-facebook"></i></a></li>
+										<li><a href=""><i class="fab fa-youtube"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -152,17 +160,17 @@
 						<div class="instr-info">
 							<div class="instr-contact-info">
 								<div class="instr-photo col-3"><img src="./images/EddieKao.webp" alt="instructor-EddieKao"></div>
-								<div class="instr-position">
+								<div class="instr-position col-8">
 									<p>Ruby / Git 講師</p>
 									<h3 class="instr-name">高見龍 (Eddie Kao)</h3>
 
 									<!-- fontawesome icons -->
 									<ul class="cont-link">
-										<li><i class="fas fa-globe"></i></li>
-										<li><i class="fab fa-facebook"></i></li>
-										<li><i class="fab fa-twitter"></i></li>
-										<li><i class="fab fa-github"></i></li>
-										<li><i class="fab fa-youtube"></i></li>
+										<li><a href=""><i class="fas fa-globe"></i></a></li>
+										<li><a href=""><i class="fab fa-facebook"></i></a></li>
+										<li><a href=""><i class="fab fa-twitter"></i></a></li>
+										<li><a href=""><i class="fab fa-github"></i></a></li>
+										<li><a href=""><i class="fab fa-youtube"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -189,15 +197,15 @@
 						<div class="instr-info">
 							<div class="instr-contact-info">
 								<div class="instr-photo col-3"><img src="./images/Kuro.webp" alt="instructor-Kuro"></div>
-								<div class="instr-position">
+								<div class="instr-position col-8">
 									<p>Vue / JavaScript 講師</p>
 									<h3 class="instr-name">許國政 (Kuro Hsu)</h3>
 									<!-- fontawesome icons -->
 									<ul class="cont-link">
-										<li><i class="fas fa-globe"></i></li>
-										<li><i class="fab fa-facebook"></i></li>
-										<li><i class="fab fa-twitter"></i></li>
-										<li><i class="fab fa-github"></i></li>
+										<li><a href=""><i class="fas fa-globe"></i></a></li>
+										<li><a href=""><i class="fab fa-facebook"></i></a></li>
+										<li><a href=""><i class="fab fa-twitter"></i></a></li>
+										<li><a href=""><i class="fab fa-github"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -225,14 +233,14 @@
 								<div class="instr-photo col-3">
 									<img src="./images/Milkmidi.webp" alt="instructor-Milkmidi">
 								</div>
-								<div class="instr-position">
+								<div class="instr-position col-8">
 									<p>React 講師</p>
 									<h3 class="instr-name">廖珀均 (奶綠茶)</h3>
 									<!-- fontawesome icons -->
 									<ul class="cont-link">
-										<li><i class="fas fa-globe"></i></li>
-										<li><i class="fab fa-facebook"></i></li>
-										<li><i class="fab fa-github"></i></li>
+										<li><a href=""><i class="fas fa-globe"></i></a></li>
+										<li><a href=""><i class="fab fa-facebook"></i></a></li>
+										<li><a href=""><i class="fab fa-github"></i></a></li>
 									</ul>
 								</div>
 
@@ -252,6 +260,7 @@
 							</div>
 						</div>
 					</div>
+					<!-- END of instr-lists -->
 				</div>
 			</div>
 		</section>
@@ -259,8 +268,9 @@
 
 		<section class="media-report">
 			<div class="media-wrap">
-				<h2>媒體報導</h2>
+				<h2 class="media-title"><span>媒體報導</span></h2>
 				<div class="row row-cols-1 row-cols-md-2">
+
 					<div class="report">
 						<header><a href="#">想當高薪工程師 備妥三大關鍵能力求職更順暢</a></header>
 						<p>中時新聞網・2021/01</p>
@@ -303,7 +313,7 @@
 			<div class="course-wrap">
 				<div class="course-row row row-cols-1 row-cols-md-2">
 					<div class="course-shortterm">
-						<h2>短期實體課程</h2>
+						<h2><span>短期實體課程</span></h2>
 						<p>目標清晰的短期課程，針對單一技術所開設。適合在職進修的工程師、PM，或對網頁設計有興趣的你。</p>
 					</div>
 
@@ -390,9 +400,9 @@
 </section>
 
 
-<section class="learning-path row row-cols-1">
+<section class="learning-path">
 	<div class="learning-wrap">
-		<h2>掌握自己的學習路徑</h2>
+		<h2><span>掌握自己的學習路徑</span></h2>
 		<p>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</p>
 		<div class="course-row">
 			<div class="course-lately">
@@ -439,16 +449,16 @@
 
 <section class="effort-5x row row-cols-1">
 
-	<h2>在五倍，我們一起超越五倍</h2>
+	<h2><span>在五倍，我們一起超越五倍</span></h2>
 	<div class="review-board">
 		<!-- TODO 學員回饋 看板 -->
 	</div>
 </section>
 
 
-<section class="articles row row-cols-1">
+<section class="articles">
 	<div class="articles-wrap">
-		<h2>精選文章</h2>
+		<h2><span>精選文章</span></h2>
 		<div class="article-board">
 			<div class="article-card">
 				<div class="article-img"><img src="" alt=""></div>
@@ -521,16 +531,16 @@
 			</div>
 
 		</div>
-	<div class="ruby-sns">
-		<ul>
-			<li><a href=""><i class="fab fa-facebook"></i></a></li>
-			<li><a href=""><i class="fab fa-youtube"></i></a></li>
-			<li><a href=""><i class="fab fa-github"></i></a></li>
-			<li><a href=""><i class="fab fa-medium-m"></i></a></li>
-			<li><a href=""><i class="fab fa-line"></i></a></li>
-			<li><a href=""><i class="fab fa-twitter"></i></a></li>
-		</ul>
-	</div>
+		<div class="ruby-sns">
+			<ul>
+				<li><a href=""><i class="fab fa-facebook"></i></a></li>
+				<li><a href=""><i class="fab fa-youtube"></i></a></li>
+				<li><a href=""><i class="fab fa-github"></i></a></li>
+				<li><a href=""><i class="fab fa-medium-m"></i></a></li>
+				<li><a href=""><i class="fab fa-line"></i></a></li>
+				<li><a href=""><i class="fab fa-twitter"></i></a></li>
+			</ul>
+		</div>
 
 	</div>
 

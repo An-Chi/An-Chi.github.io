@@ -4,10 +4,17 @@
 	box-sizing: border-box;
 }
 
+
+
 .container {
 	width: 100%;
 	position: relative;
 }
+
+
+/*
+	style in common
+----------------------------*/
 
 ::-moz-selection {  /* Code for Firefox */
 	color: #fff;
@@ -78,6 +85,10 @@ div[class$="wrap"] {
 	margin: 0 auto;
 	/*border: 1px solid #FF133E;*/
 }
+
+
+/* header Navgation bar
+--------------------*/
 
 nav.header {
 	height: 100%;
@@ -170,7 +181,11 @@ h1.title {
 	color:  #FF213E;
 }
 
-/* Content */
+
+
+
+/* Banner
+--------------------*/
 section.banner {
 	background-image:url("../images/banner-home-aca80ad097b4d77ffa3b82879b5d14a8.jpg") ;
 	background-repeat: no-repeat;
@@ -184,16 +199,20 @@ section.banner {
 
 
 .curr-slogan-wrap {
-	margin-bottom: 150px;
-	padding: 50px;
-	/*border: 3px solid red;*/
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	outline: 1px solid yellow;
+
 }
 /* TODO */
 .curr-slogan {
-	margin: 0 auto;
-	padding: 15px;
-	width: 1024px;
-	border: 1px solid yellow;
+
+	/*margin: 0 auto;*/
+	/*padding: 15px;*/
+	outline: 1px solid yellow;
 }
 
 .curr-slogan::before {
@@ -212,8 +231,8 @@ section.banner {
 
 .curr-slogan h1 {
 	font-size: 56px ;
-	line-height: 200%;
-	border: 1px solid lightgreen;
+	/*line-height: 200%;*/
+	outline: 1px solid lightgreen;
 }
 
 
@@ -531,7 +550,7 @@ div.course-category .triangle-container .triangle{
 	/*background-color: #FF133E;*/
 }
 
-div.course-category .triangle-inner .inverted-triangle {
+div.course-category .triangle-container .inverted-triangle {
 	width: 65%;
 	clip-path: polygon(0% 100%, 100% 100%, 100% 0%);
 	/* 多邊形 座標 : x y, x y, x y 右上角->右下角->*/
@@ -539,15 +558,13 @@ div.course-category .triangle-inner .inverted-triangle {
 	background-color: #FF133E;
 }
 
-div.course-category .triangle-inner .triangle{
+div.course-category .triangle-container .triangle{
 	width: 35%;
 	clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
 	/* 多邊形 座標 : x y, x y, x y 右上角->右下角->*/
 	/* clip-path:  path(); 自由曲線*/
 	background-color: #FF133E;
 }
-
-
 
 
 
@@ -645,7 +662,7 @@ footer, footer a {
 }
 
 .ruby-sns {
-	width: 100%;
+	/*width: 100%;*/
 	padding-bottom: 30px;
 	/*outline: 1px solid yellow;*/
 }
@@ -658,7 +675,7 @@ footer, footer a {
 
 .ruby-sns ul li{
 	font-size: 30px;
-	margin: 0 20px;
+	/*margin: 0 20px;*/
 
 }
 
@@ -680,6 +697,4 @@ footer, footer a {
 	padding: 15px 0;
 	/*outline: 2px solid pink;*/
 	width: 100%;
-
-
 }
